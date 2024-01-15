@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black_Fight</title>
+</head>
+<style>
+    body {
+        margin: 0; /* Remove default body margin */
+    }
+
+    .upper {
+        display: flex;
+        justify-content: left;
+        background-color: #121212;
+        height: 15vh;
+    }
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        top: 20px;
+    }
+    .mid {
+        display: block;
+        width: 126%;
+        margin: 20px auto;
+        font-size: large;
+        font-weight: 300;
+        font-stretch: extra-expanded;
+        font-weight: bolder;
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar li {
+        color: aliceblue;
+        display: inline-block;
+    }
+    .navbar li a {
+        color:white;
+        text-decoration: none;
+        padding:34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration-thickness: 20px;
+        text-decoration: underline red;
+        color: rgb(116, 30, 230);
+    }
+    .body1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .body1 h1 {
+        font-size: 125px;
+        font-family: ui-monospace;
+        font-weight: 1000;
+        font-display: center;
+        position: absolute;
+        top: 30%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: hsl(240, 8%, 3%);
+        text-shadow: 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red;
+        animation: glow 2s ease-in-out infinite;
+    }
+    @keyframes glow {
+        0% {
+            text-shadow: 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red;
+        }
+        50% {
+            text-shadow: 0px 0px 20px orange, 0px 0px 30px orange, 0px 0px 40px orange;
+        }
+        100% {
+            text-shadow: 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red;
+        }
+    }
+    .body1 h2 {
+        position: absolute;
+        top: calc(50% + 40px); /* Adjust the value to position the button below the text */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+    }
+    .body1 button {
+        cursor: pointer;
+        border: none;
+        background-color: #ff9600;
+        border-radius: 19px;
+        padding: 20px 40px;
+        font-size: 24px;
+        font-weight: bold;
+        animation: changeColor 1s ease-in-out infinite;
+        position: relative;
+        overflow: hidden;
+        color: white;
+        text-shadow: 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red;
+    }
+    @keyframes changeColor {
+        0% {
+            background-color: #ff9600;
+            box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red;
+        }
+        50% {
+            background-color: #ca1717;
+            box-shadow: 0 0 20px orange, 0 0 30px orange, 0 0 40px orange;
+        }
+        100% {
+            background-color: #ff9600;
+            box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red;
+        }
+    }
+    .body1 button:before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        width: 200px;
+        height: 200px;
+        /* background: radial-gradient(circle, #00ff00 20%, transparent 50%); */
+        border-radius: 50%;
+        animation: flames 2s ease-in-out infinite;
+    }
+    @keyframes flames {
+        0% {
+            transform: scale(0) rotate(0deg);
+        }
+        50% {
+            transform: scale(1) rotate(180deg);
+        }
+        100% {
+            transform: scale(0) rotate(360deg);
+        }
+        .body1 button {
+            border: none;
+            background-color: #ff9600;
+            border-radius: 19px;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: changeColor 1s ease-in-out infinite;
+            position: relative;
+            overflow: hidden;
+            color: white;
+            text-shadow: 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red;
+    }
+
+@keyframes changeColor {
+    0% {
+        background-color: #ff9600;
+        box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red;
+    }
+    50% {
+        background-color: #ca1717;
+        box-shadow: 0 0 20px orange, 0 0 30px orange, 0 0 40px orange;
+    }
+    100% {
+        background-color: #ff9600;
+        box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red;
+    }
+}
+
+.body1 button:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    /* background: radial-gradient(circle, #a9e2a9 20%, transparent 50%); */
+    border-radius: 50%;
+    animation: flames 2s ease-in-out infinite;
+}
+
+@keyframes flames {
+    0% {
+        transform: scale(0) rotate(0deg);
+    }
+    50% {
+        transform: scale(1) rotate(180deg);
+    }
+    100% {
+        transform: scale(0) rotate(360deg);
+    }
+}
+    }
+    #valorent-text {
+        font-size: 48px;
+        animation: changeColor 2s ease-in-out infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: rgb(5, 5, 5);
+  }
+
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+</style>
+<style>
+    .body1 h1 {
+        font-size: 125px;
+        font-family: ui-monospace;
+        font-weight: 1000;
+        font-display: center;
+        position: absolute;
+        top: 30%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: hsl(240, 8%, 3%);
+        text-shadow: 0px 0px 20px red, 0px 0px 30px rgb(19, 100, 239), 0px 0px 40px rgb(38, 0, 255);
+        animation: glow 2s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+        0% {
+            text-shadow: 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red;
+        }
+        50% {
+            text-shadow: 0px 0px 20px orange, 0px 0px 30px orange, 0px 0px 40px orange;
+        }
+        100% {
+            text-shadow: 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red;
+        }
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="upper">
+            <img src="logo4.png" alt=".">
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#">Game-Info</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Leaderboards</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Arshi-Innovations</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="body1">
+        <h1>V-PARK</h1>
+        <h2><button class="btn">Download</button></h2>
+        <img src="back090.gif" alt="g">
+        <audio src="Roman.mp3" autoplay></audio>
+    </div>
+    hello
+</body>
+</html>
